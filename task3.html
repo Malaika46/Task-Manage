@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goodbye - TaskFlow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="goodbye-styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Background Animation -->
+        <div class="background-animation">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+            <div class="floating-shape shape-5"></div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="goodbye-container">
+            <div class="goodbye-content">
+                <!-- Logo Section -->
+                <div class="logo-section">
+                    <div class="logo-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h1 class="logo-text">TaskFlow</h1>
+                </div>
+
+                <!-- Goodbye Message -->
+                <div class="goodbye-message">
+                    <div class="goodbye-icon">
+                        <i class="fas fa-hand-wave"></i>
+                    </div>
+                    <h2>Thank You for Using TaskFlow!</h2>
+                    <p>We hope you had a productive session. Your progress has been saved and you can continue where you left off next time.</p>
+                </div>
+
+                <!-- Stats Summary -->
+                <div class="session-stats">
+                    <h3>Your Session Summary</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number" id="sessionTime">45 min</div>
+                                <div class="stat-label">Session Time</div>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number" id="tasksCompleted">3</div>
+                                <div class="stat-label">Tasks Completed</div>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number" id="productivityScore">85%</div>
+                                <div class="stat-label">Productivity Score</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Motivational Quote -->
+                <div class="quote-section">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <blockquote id="motivationalQuote">
+                        "The way to get started is to quit talking and begin doing."
+                    </blockquote>
+                    <cite id="quoteAuthor">- Walt Disney</cite>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button class="btn-primary" id="backToLoginBtn">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Back to Login
+                    </button>
+                    <button class="btn-secondary" id="shareProgressBtn">
+                        <i class="fas fa-share-alt"></i>
+                        Share Progress
+                    </button>
+                </div>
+
+                <!-- Footer Message -->
+                <div class="footer-message">
+                    <p>See you soon! Keep up the great work! 🚀</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Floating Elements -->
+            <div class="floating-elements">
+                <div class="floating-element element-1">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="floating-element element-2">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="floating-element element-3">
+                    <i class="fas fa-thumbs-up"></i>
+                </div>
+                <div class="floating-element element-4">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <div class="floating-element element-5">
+                    <i class="fas fa-trophy"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confetti Animation -->
+    <div class="confetti-container" id="confettiContainer"></div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i class="toast-icon"></i>
+            <span class="toast-message"></span>
+        </div>
+        <button class="toast-close" id="toastClose">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <script src="goodbye.js"></script>
+</body>
+</html>
+
