@@ -305,7 +305,7 @@ class GoodbyeManager {
         
         // Redirect after animation
         setTimeout(() => {
-            window.location.href = 'login.html';
+            window.location.href = 'index.html';
         }, 500);
     }
 
